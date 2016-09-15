@@ -1,17 +1,12 @@
 extends(src='layouts/default.sgr')
   block(name='seo')
-    title Brand Develoment | Baltimore MD | Backroom
+    title Automation Components & Systems | Fluidraulics
     meta(
       name='description'
-      content='Backroom creates deliberate brands for ambitious people.'
+      content='Fluidraulics, Inc. offers a wide variety of electronic single or multi-axis linear and rotary type stepper and servo drive robotic actuators and systems.'
     )
   block(name='main')
-    div.tinted
-      header
-        a(href='/' id='mark')
-          include(src='includes/_mark.sgr')
-        nav
-          ul
-            li:a(href='/blog') Blog
-            li:a(href='/contact') Contact
+    #inner
+      img(src='img/mark.svg' id='mark')
+      h1(md) Fluidraulics, Inc.
 

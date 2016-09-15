@@ -1,12 +1,12 @@
 {
-  "name": "backroom-www",
-  "description": "The backroom.io website.",
+  "name": "fluidraulics-www",
+  "description": "The fluidraulics.com website.",
   "version": "0.0.1",
   "author": "bckrm",
   "ava": {
     "verbose": "true"
   },
-  "bugs": "https://github.com/bckrm/backroom-www/issues",
+  "bugs": "https://github.com/fluidraulics/www/issues",
   "dependencies": {
     "babel-preset-latest": "^6.14.0",
     "image-webpack-loader": "^2.0.0",
@@ -23,10 +23,10 @@
     "spike-core": "^0.11.2",
     "standard": "^8.0.0"
   },
-  "homepage": "https://github.com/bckrm/backroom-www",
+  "homepage": "https://github.com/fluidraulics/www",
   "main": "app.js",
   "private": "true",
-  "repository": "https://github.com/bckrm/backroom-www",
+  "repository": "https://github.com/fluidraulics/www",
   "scripts": {
     "lint": "standard | snazzy",
     "precommit": "npm run lint -s",

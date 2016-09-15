@@ -1,3 +1,3 @@
 ## About
 
-Backroom creates deliberate brands for ambitious people. We believe great brands come from smarts, collaboration, art and iteration.
+Fluidraulics, Inc. provides a wide variety of electronic single or multi-axis linear and rotary type stepper and servo drive robotic actuators and systems.

@@ -1,22 +1,33 @@
-
-#index > div
-  background-image: url(../img/elm-throw-wins-award.jpg)
-  background-position: 50% 0
-  background-repeat: no-repeat
-  background-size: cover
+#index
+  background-image: url(../img/pipe.svg)
+  background-position: 50% 50%
+  background-repeat: repeat
+  background-size: 1000px
   display: flex
   flex-direction: column
   margin: 0
   min-height: 100vh
+  text-align: center
 
-  & rect,
-  & line 
-    fill: none
-    stroke: white
+  & #inner
+    background: gainsboro
+    border-radius: 5px
+    height: 60vh
+    margin: auto
+    opacity: .9
+    width: 60vw
 
-nav
-  & a
-    color: #fff
+    & h1
+      color: #000
+      font-size: 2em
+      line-height: 1.1em
+      padding: 1em
+      text-align: center
 
+      @media (min-width: 48em)
+        font-size: 4em
+        padding: 1em // if calc() is not supported
+        padding: 1em calc(50% - 384px)
+        padding-bottom: 1em
 
  
