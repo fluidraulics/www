@@ -7,15 +7,31 @@
   flex-direction: column
   margin: 0
   min-height: 100vh
-  text-align: center
 
   & #inner
-    background: gainsboro
-    border-radius: 5px
-    height: 60vh
-    margin: auto
-    opacity: .9
-    width: 60vw
+    align-items: center
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    padding: 1em // if calc() is not supported
+    padding: 3em calc(50% - 512px)
+
+    & div
+      background: gainsboro
+      border-radius: 5px
+      flex-grow: 1
+      min-height: 15em
+      margin: .5em
+      opacity: 0.9
+      padding: 2em
+      width: 15em
+
+      & p
+
+      & #mark
+        padding-top: 3em
+        width: 7em
+
 
     & h1
       color: #000
