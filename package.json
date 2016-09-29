@@ -2,7 +2,7 @@
   "name": "fluidraulics-www",
   "description": "The fluidraulics.com website.",
   "version": "0.0.1",
-  "author": "bckrm",
+  "author": "Tom Kraak",
   "ava": {
     "verbose": "true"
   },
