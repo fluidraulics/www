@@ -1,0 +1,9 @@
+extends(src='layouts/default.sgr')
+  block(name='seo')
+    title Vendors | Fluidraulics
+    meta(
+      name='description'
+      content='Our vendors.'
+    )
+  block(name='main')
+    h1 vendor directory coming soon ...

@@ -19,7 +19,7 @@ html(lang='en-us')
             img(src='img/mark.svg' id='mark')
           nav
             ul
-              li:a(href='products') Products
+              li:a(href='vendors') Vendors
               li:a(href='contact') Contact
               li:a(href='about') About
       block(name='main')
