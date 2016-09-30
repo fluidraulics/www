@@ -6,19 +6,4 @@ extends(src='layouts/default.sgr')
       content='We are a fluid power distributor offering pneumatic, hydraulic, and electric actuator products to OEMs, special machine builders, and end user accounts.'
     )
   block(name='main')
-    #inner
-      div
-        img(src='img/mark.svg' id='mark')
-      div
-        include(src='includes/_pa.sgr')
-      div
-        include(src='includes/_hours.sgr')
-      div
-        include(src='includes/_oh.sgr')
-      div
-        p(md)
-          | Our products include air cylinders and valves, electric actuators, fittings and tubing, FRL's, gauges and mufflers, grippers, hydraulic cylinders, logic components, miniature pneumatics, pneumatic automation components, precision and electric regulators, quick connects, sensors, and controllers.
-      div
-        p(md)
-          | We have been serving our customers in the surrounding areas of Pennsylvania and Ohio since 1967. Our experienced employees are ready to assist you in choosing the correct product for your application as well as provide assistance with implementation of our vendor's products.
-
+    h1 Fluidraulics is a value added fluid power distributor offering a wide range of pneumatic, hydraulic, and electric actuator products to OEMs, special machine builders, and end user accounts.
