@@ -13,6 +13,15 @@ html(lang='en-us')
 
   body(id='{{ pageId }}')
       
+      block(name='header')
+        header
+          a(href='/')
+            img(src='img/mark.svg' id='mark')
+          nav
+            ul
+              li:a(href='products') Products
+              li:a(href='contact') Contact
+              li:a(href='about') About
       block(name='main')
 
     block(name='javascript')
