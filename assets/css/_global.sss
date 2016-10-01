@@ -4,15 +4,19 @@ body
   font-weight: normal
   color: #111
   background-color: #fff
-  padding: 0 2em
 
+/*  ================ Main ================ */
+
+main
+  padding: 0 2em
+  
 /*  ================ Headings ================ */
 
 h1, h2, h3
   line-height: 1.4
 
 h1
-  font-size: responsive 20px 42px
+  font-size: responsive 26px 42px
 
 /*  ================ paragraphs ================ */
 
@@ -32,11 +36,17 @@ header
   display: flex
   flex-direction: column
   justify-content: space-between
-  margin: 1em 6em
+  margin: 1em 10vw
   min-height: 8em
 
   & #mark
     width: 3em
+
+  @media (min-width: 40em)
+    flex-direction: row
+
+    & nav
+      min-width: 40vw
 
 nav
   background: #f5f5f5
@@ -47,10 +57,22 @@ nav
   & ul
     display: flex
     justify-content: space-around
+
   & li
     list-style: none
+    position: relative
+
+    &:hover
+      &:after
+        content: ''
+        left: 100%
+        border-bottom: 2px solid currentColor
+        bottom: 10px
+        position: absolute
+        transform: rotate(115deg)
+        width: 20px
+
   & a
     color: #000
     text-decoration: none
-
 
