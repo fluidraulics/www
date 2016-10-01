@@ -4,6 +4,7 @@ body
   font-weight: normal
   color: #111
   background-color: #fff
+  padding: 0 2em
 
 /*  ================ Headings ================ */
 
@@ -29,14 +30,18 @@ header
   align-items: center
   border-radius: 5px
   display: flex
+  flex-direction: column
   justify-content: space-between
-  margin: 2em 6em
-  padding: 1em
+  margin: 1em 6em
+  min-height: 8em
+
+  & #mark
+    width: 3em
 
 nav
   background: #f5f5f5
   border-radius: 5px
-  min-width: 40vw
+  min-width: 90vw
   padding: 0.5em
 
   & ul
@@ -47,22 +52,5 @@ nav
   & a
     color: #000
     text-decoration: none
-
-/*  ================ mark ================ */
-
-#mark
-  width: 4.00em
-
-/*  ================ svg ================ */
-
-
-/*  ================ opt-ins ================ */
-
-.tinted
-  // background-color: hsl(210, 29%, 24%)
-  background-color: darkslategray
-  background-blend-mode: darken /* Safari does not support luminosity yet */
-  background-blend-mode: overlay
-
 
 
