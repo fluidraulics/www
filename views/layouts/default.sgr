@@ -12,7 +12,7 @@ html(lang='en-us')
       link(rel='stylesheet' href='css/main.css')
 
   body(id='{{ pageId }}')
-      
+
     block(name='header')
       header
         a(href='/')
@@ -24,6 +24,15 @@ html(lang='en-us')
             li:a(href='about') About
 
     block(name='main')
+    block(name='footer')
+      footer
+        ul
+          li
+            | Cranberry Township, PA
+            span 724.452.0300
+          li
+            | Twinsburg, OH
+            span 330.425.2579
 
     block(name='javascript')
       script(src='js/main.js' defer)
