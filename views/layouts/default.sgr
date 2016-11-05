@@ -23,7 +23,9 @@ html(lang='en-us')
             li:a(href='contact') Contact
             li:a(href='about') About
 
-    block(name='main')
+    main
+      block(name='main')
+
     block(name='footer')
       footer
         ul
