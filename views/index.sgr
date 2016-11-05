@@ -1,10 +1,10 @@
 extends(src='layouts/default.sgr')
   block(name='seo')
-    title Automation Components & Systems | Fluidraulics
+    title {{ contentful.index[0].meta.fields.seoTitle }}
     meta(
       name='description'
-      content='We are a fluid power distributor offering pneumatic, hydraulic, and electric actuator products to OEMs, special machine builders, and end user accounts.'
+      content='{{ contentful.index[0].meta.fields.seoDescription }}'
     )
   block(name='main')
-    h1 Fluidraulics is a value added fluid power distributor offering a wide range of pneumatic, hydraulic, and electric actuator products to OEMs, special machine builders, and end user accounts.
+    h1 {{ contentful.index[0].block[0].fields.body }}
 

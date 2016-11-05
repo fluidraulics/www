@@ -17,7 +17,7 @@ module.exports = {
   reshape: (ctx) => {
     return htmlStandards({
       webpack: ctx,
-      locals: { pageId: pageId(ctx) }
+      locals: Object.assign({ pageId: pageId(ctx) }, locals)
     })
   },
   postcss: (ctx) => {
@@ -31,6 +31,13 @@ module.exports = {
       spaceId: process.env.spaceId,
       contentTypes: [
         {
+          name: 'index',
+          id: 'page',
+          filters: {
+            'sys.id': '4GP68pszosicYwowA2QuY2'
+          }
+        },
+        {
           name: 'vendors',
           id: 'vendor'
           /* 
@@ -41,7 +48,7 @@ module.exports = {
           */
         }
       ],
-      json: 'data/vendors.json'
+      json: 'data/data.json'
     })
   ],
   server: { open: false }
