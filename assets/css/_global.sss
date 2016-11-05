@@ -8,7 +8,14 @@ body
 /*  ================ Main ================ */
 
 main
+  min-height: 80vh
   padding: 0 2em
+
+  @media (min-width: 22em)
+    min-height: 65vh
+
+  @media (orientation: landscape) and (max-width: 44em)
+    min-height: 90vh
   
 /*  ================ Headings ================ */
 
@@ -36,7 +43,7 @@ header
   display: flex
   flex-direction: column
   justify-content: space-between
-  margin: 1em 10vw
+  margin: 2em 10vw
   min-height: 8em
 
   & #mark
@@ -79,18 +86,27 @@ nav
 /*  ================ footer ================ */
 
 footer
-  padding: 4em calc(50% - 384px)
+  background: var(--whiteSmoke)
+  padding: 2em calc(50% - 384px)
   
   & ul
     display: flex
-    flex-wrap: wrap
-    margin: -0.5em
+    flex-direction: column
+    margin: 0 2em
+
+    @media (min-width: 40em)
+      flex-direction: row
 
   & span
     display: block
-    padding: 1em 0
+    font-size: 0.8em
+    margin: 0.5em 1em
 
   & ul > *
-    flex: 1 0 5em
+    flex: 1 0
     list-style: none
-    margin: 0.5em
+    margin: 1em 0
+
+  & a
+    color: #000
+    text-decoration: none
