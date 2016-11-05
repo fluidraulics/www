@@ -1,0 +1,11 @@
+
+extends(src='layouts/default.sgr')
+  block(name='seo')
+    title About Fluidraulics
+    meta(
+      name='description'
+      content='Fluidraulics has been serving customers in the regional and surrounding areas of Pennsylvania and Ohio since 1967.'
+    )
+  block(name='main')
+    h1 About Us
+    p 
