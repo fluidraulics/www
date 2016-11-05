@@ -11,12 +11,14 @@
     "babel-preset-latest": "^6.16.0",
     "image-webpack-loader": "^2.0.0",
     "reshape-standard": "^0.4.0",
+    "spike-contentful": "^0.4.0",
     "spike-css-standards": "^0.1.1",
     "spike-page-id": "^0.1.0",
     "webpack": "^1.13.1"
   },
   "devDependencies": {
     "ava": "^0.16.0",
+    "dotenv": "^2.0.0",
     "rimraf": "^2.5.4",
     "snazzy": "^5.0.0",
     "spike": "^0.12.1",
