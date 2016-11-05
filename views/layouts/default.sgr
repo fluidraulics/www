@@ -31,10 +31,20 @@ html(lang='en-us')
         ul
           li
             | Cranberry Township, PA
-            span 724.452.0300
+            span
+              | phone: 
+              a(href='tel:724.452.0300') 724.452.3000
+            span
+              | fax: 
+              a(href='fax:724.452.1994') 724.452.1994
           li
             | Twinsburg, OH
-            span 330.425.2579
+            span
+              | phone: 
+              a(href='tel:330.425.2579') 330.425.2579
+            span
+              | fax: 
+              a(href='fax:330.425.8561') 330.425.8561
 
     block(name='javascript')
       script(src='js/main.js' defer)
