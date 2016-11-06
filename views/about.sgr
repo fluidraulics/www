@@ -6,6 +6,7 @@ extends(src='layouts/default.sgr')
       content='{{ contentful.about[0].meta.fields.seoDescription }}'
     )
   block(name='main')
-    h1 About Us
-    p {{{ marked(contentful.about[0].block[0].fields.body) }}} 
+    section
+      h2 About Fluidraulics
+      div {{{ marked(contentful.about[0].block[0].fields.body) }}}
 
