@@ -1,11 +1,11 @@
-
 extends(src='layouts/default.sgr')
   block(name='seo')
-    title About Fluidraulics
+    title {{ contentful.about[0].meta.fields.seoTitle }}
     meta(
       name='description'
-      content='Fluidraulics has been serving customers in the regional and surrounding areas of Pennsylvania and Ohio since 1967.'
+      content='{{ contentful.about[0].meta.fields.seoDescription }}'
     )
   block(name='main')
     h1 About Us
-    p 
+    p {{ contentful.about[0].block[0].fields.body }} 
+

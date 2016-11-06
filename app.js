@@ -38,6 +38,13 @@ module.exports = {
           }
         },
         {
+          name: 'about',
+          id: 'page',
+          filters: {
+            'sys.id': '1ShmJTtfuo0mgCcIOAu6Qi'
+          }
+        },
+        {
           name: 'vendors',
           id: 'vendor'
           /* 
