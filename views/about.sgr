@@ -7,5 +7,5 @@ extends(src='layouts/default.sgr')
     )
   block(name='main')
     h1 About Us
-    p {{ contentful.about[0].block[0].fields.body }} 
+    p {{{ marked(contentful.about[0].block[0].fields.body) }}} 
 

@@ -5,6 +5,7 @@ const cssStandards = require('spike-css-standards')
 const jsStandards = require('babel-preset-latest')
 const pageId = require('spike-page-id')
 const Contentful = require('spike-contentful')
+const marked = require('marked')
 const locals = {}
 
 module.exports = {
@@ -17,7 +18,7 @@ module.exports = {
   reshape: (ctx) => {
     return htmlStandards({
       webpack: ctx,
-      locals: Object.assign({ pageId: pageId(ctx) }, locals)
+      locals: Object.assign({ pageId: pageId(ctx) }, locals, { marked: marked })
     })
   },
   postcss: (ctx) => {
