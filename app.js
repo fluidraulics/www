@@ -1,5 +1,6 @@
 require('dotenv').config({ silent: true })
 
+const _ = require('lodash-addons')
 const htmlStandards = require('reshape-standard')
 const cssStandards = require('spike-css-standards')
 const jsStandards = require('babel-preset-latest')
@@ -7,6 +8,15 @@ const pageId = require('spike-page-id')
 const Contentful = require('spike-contentful')
 const marked = require('marked')
 const locals = {}
+
+// temp workaround bug in spike-contentful
+
+const myPageId = function pageId (ctx) {
+  if (ctx.options) {
+    return ctx.resourcePath.replace(`${ctx.options.context}/`, '').replace(/(.*)?(\..+?$)/, '$1').replace(new RegExp(`(?:${ctx.options.spike.dumpDirs.join('|')})/`), '').replace(/\//g, '-')
+  }
+  return 'vendor'
+}
 
 module.exports = {
   devtool: 'source-map',
@@ -18,7 +28,11 @@ module.exports = {
   reshape: (ctx) => {
     return htmlStandards({
       webpack: ctx,
-      locals: Object.assign({ pageId: pageId(ctx) }, locals, { marked: marked })
+      locals: Object.assign(
+        {pageId: myPageId(ctx) },
+        locals,
+        { marked: marked },
+        { _: _ })
     })
   },
   postcss: (ctx) => {
@@ -54,13 +68,11 @@ module.exports = {
         },
         {
           name: 'vendors',
-          id: 'vendor'
-          /* 
+          id: 'vendor',
           template: {
-            path: 'views/layout.sgr',
-            output: (tm) => { return `testimonials/${_.slugify(tm.title)}.html` }
+            path: 'views/layouts/vendor.sgr',
+            output: (vendor) => { return `vendors/${_.slugify(vendor.title)}.html` }
           }
-          */
         }
       ],
       json: 'data/data.json'
