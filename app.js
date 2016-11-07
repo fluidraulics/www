@@ -46,6 +46,13 @@ module.exports = {
           }
         },
         {
+          name: 'contact',
+          id: 'page',
+          filters: {
+            'sys.id': '3ioJJTHOFyoOOksMuYEswa'
+          }
+        },
+        {
           name: 'vendors',
           id: 'vendor'
           /* 

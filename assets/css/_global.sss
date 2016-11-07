@@ -26,7 +26,11 @@ h1
   font-size: responsive 26px 42px
 
 h2
-  font-size: responsive 20px 36px
+  font-size: responsive 22px 32px
+  margin-bottom: 0.5em
+
+h3
+  font-size: responsive 18px 26px
   margin-bottom: 0.5em
 
 /*  ================ paragraphs ================ */
@@ -115,3 +119,17 @@ footer
   & a
     color: #000
     text-decoration: none
+
+/*  ================ business address ================ */
+
+.adr
+  & span:first-child
+    display: block
+
+.vcard
+  & p:not(.adr)
+    margin-bottom: 0
+
+.locality:after
+  content: ','
+

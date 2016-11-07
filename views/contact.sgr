@@ -1,0 +1,48 @@
+extends(src='layouts/default.sgr')
+  block(name='seo')
+    title {{ contentful.contact[0].meta.fields.seoTitle }}
+    meta(
+      name='description'
+      content='{{ contentful.contact[0].meta.fields.seoDescription }}'
+    )
+  block(name='main')
+    p Fluidraulics' normal office hours are Monday - Friday 8:00 am - 5:00 pm EST.
+    .container
+      section
+        h2 Pittsburgh Area
+        .vcard
+          h3.fn.org Fluidraulics, Inc.
+          p.adr
+            span.street-address 9150 Marshall Road
+            span.locality Cranberry Township
+            abbr.region(title='Pennsylvania') PA
+            span.postal-code 16066
+          p
+          | Phone: 
+          a.tel(href='tel:7244523000') 724.452.3000
+          p
+            | Fax: 
+            a(href='fax:7244521994') 724.452.1994
+          p
+            | Email: 
+            a(href='mailto:pghsales@fluidraulics.com') pghsales@fluidraulics.com
+
+      section
+        h2 Cleveland Area
+        .vcard
+          h3.fn.org Fluidraulics, Inc.
+          p.adr
+            span.street-address 9140 Ravenna Road
+            span.locality Twinsburg
+            abbr.region(title='Ohio') OH
+            span.postal-code 44087
+          p
+            | Phone: 
+            a.tel(href='tel:3304252579') 330.425.2579
+          p
+            | Fax: 
+            a(href='fax:3304258561') 330.425.8561
+          p
+            | Email: 
+            a(href='mailto:clesales@fluidraulics.com') clesales@fluidraulics.com
+
