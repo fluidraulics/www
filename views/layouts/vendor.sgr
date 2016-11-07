@@ -1,0 +1,52 @@
+doctype html
+html(lang='en-us')
+  head
+    block(name='meta')
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible' content='IE=edge, chrome=1')
+      meta(name='author' content='Tom Kraak')
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    block(name='seo')
+    block(name='stylesheets')
+      link(rel='stylesheet' href='/css/main.css')
+
+  body(id='{{ pageId }}')
+
+    block(name='header')
+      header
+        a(href='/')
+          img(src='/img/mark.svg' id='mark')
+        nav
+          ul
+            li:a(href='/vendors') Vendors
+            li:a(href='/contact') Contact
+            li:a(href='/about') About
+
+    main
+      block(name='main')
+        .container {{{ marked(item.body) }}}
+
+    block(name='footer')
+      footer
+        ul
+          li
+            | Greater Pittsburgh, PA
+            span
+              | phone: 
+              a(href='tel:724.452.0300') 724.452.3000
+            span
+              | fax: 
+              a(href='fax:724.452.1994') 724.452.1994
+          li
+            | Greater Cleveland, OH
+            span
+              | phone: 
+              a(href='tel:330.425.2579') 330.425.2579
+            span
+              | fax: 
+              a(href='fax:330.425.8561') 330.425.8561
+
+    block(name='javascript')
+      script(src='js/main.js' defer)
+

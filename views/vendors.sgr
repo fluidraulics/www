@@ -6,4 +6,5 @@ extends(src='layouts/default.sgr')
       content='Our vendors.'
     )
   block(name='main')
-    h1 vendor directory coming soon ...
+    each(loop='vendor of contentful.vendors')
+      h2:a(href='vendors/{{ _.slugify(vendor.title) }}') {{ vendor.title }}
