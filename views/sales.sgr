@@ -1,0 +1,26 @@
+extends(src='layouts/default.sgr')
+  block(name='seo')
+    title {{ contentful.sales[0].meta.fields.seoTitle }}
+    meta(
+      name='description'
+      content='{{ contentful.sales[0].meta.fields.seoDescription }}'
+    )
+  block(name='main')
+    form
+      legend Request a Sales Call
+      .textfield
+        input(type='text')
+        label Full Name
+      .textfield
+        input(type='text')
+        label Organization
+      .textfield
+        input(type='text')
+        label Zip Code
+      .textfield
+        input(type='text')
+        label Email Address
+      .textfield
+        input(type='text')
+        label Phone Number
+
