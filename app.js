@@ -67,6 +67,13 @@ module.exports = {
           }
         },
         {
+          name: 'sales',
+          id: 'page',
+          filters: {
+            'sys.id': '60aMIbHglykAuUwgg2QkUO'
+          }
+        },
+        {
           name: 'vendors',
           id: 'vendor',
           template: {
