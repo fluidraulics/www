@@ -76,6 +76,9 @@ module.exports = {
         {
           name: 'vendors',
           id: 'vendor',
+          filters: {
+            order: 'fields.title'
+          },
           template: {
             path: 'views/layouts/vendor.sgr',
             output: (vendor) => { return `vendors/${_.slugify(vendor.title)}.html` }
