@@ -9,7 +9,7 @@ extends(src='layouts/default.sgr')
     form
       legend Request a Sales Call
       .textfield
-        input(type='text')
+        input(type='text' autofocus)
         label Full Name
       .textfield
         input(type='text')
@@ -23,4 +23,24 @@ extends(src='layouts/default.sgr')
       .textfield
         input(type='text')
         label Phone Number
+      .textfield
+        textarea
+        label Reason for Visit
+      .select
+        select
+          option Yes
+          option No
+        label Are you a current customer of Fluidraulics?
+      .select
+        select
+          option Low
+          option Normal
+          option Urgent
+        label Priority of Request
+      .select
+        select
+          option Cleveland
+          option Pittsburgh
+        label Fluidraulics Office Closest to You
+      button(type='submit') Send
 
