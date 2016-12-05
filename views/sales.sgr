@@ -6,7 +6,7 @@ extends(src='layouts/default.sgr')
       content='{{ contentful.sales[0].meta.fields.seoDescription }}'
     )
   block(name='main')
-    form(name='sales-call, 'action='/', netlify)
+    form(name='sales-call' action='/' netlify)
       legend Request a Sales Call
       .textfield
         input(type='text' autofocus)
