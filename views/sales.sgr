@@ -9,19 +9,19 @@ extends(src='layouts/default.sgr')
     form(name='sales-call' action='/' netlify)
       legend Request a Sales Call
       .textfield
-        input(type='text' autofocus)
+        input(type='text' autofocus required)
         label Full Name
       .textfield
         input(type='text')
         label Organization
       .textfield
-        input(type='text')
+        input(type='text' required)
         label Zip Code
       .textfield
-        input(type='text')
+        input(type='text' required)
         label Email Address
       .textfield
-        input(type='text')
+        input(type='text' required)
         label Phone Number
       .textfield
         textarea
