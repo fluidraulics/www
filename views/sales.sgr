@@ -6,7 +6,7 @@ extends(src='layouts/default.sgr')
       content='{{ contentful.sales[0].meta.fields.seoDescription }}'
     )
   block(name='main')
-    form
+    form(name='sales-call, 'action='/', netlify)
       legend Request a Sales Call
       .textfield
         input(type='text' autofocus)
@@ -28,17 +28,20 @@ extends(src='layouts/default.sgr')
         label Reason for Visit
       .select
         select
+          option -please select-
           option Yes
           option No
         label Are you a current customer of Fluidraulics?
       .select
         select
+          option -please select-
           option Low
           option Normal
           option Urgent
         label Priority of Request
       .select
         select
+          option -please select-
           option Cleveland
           option Pittsburgh
         label Fluidraulics Office Closest to You
