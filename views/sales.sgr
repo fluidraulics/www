@@ -9,38 +9,38 @@ extends(src='layouts/default.sgr')
     form(name='sales-call' action='/' netlify)
       legend Request a Sales Call
       .textfield
-        input(type='text' autofocus required)
+        input(type='text' name='name' autofocus required)
         label Full Name
       .textfield
-        input(type='text')
+        input(type='text' name='organization')
         label Organization
       .textfield
-        input(type='text' required)
+        input(type='text' name='zip' required)
         label Zip Code
       .textfield
-        input(type='text' required)
+        input(type='text' name='email' required)
         label Email Address
       .textfield
-        input(type='text' required)
+        input(type='text' name='phone' required)
         label Phone Number
       .textfield
-        textarea
+        textarea(name='reason')
         label Reason for Visit
       .select
-        select
+        select(name='customer')
           option -please select-
           option Yes
           option No
         label Are you a current customer of Fluidraulics?
       .select
-        select
+        select(name='priority')
           option -please select-
           option Low
           option Normal
           option Urgent
         label Priority of Request
       .select
-        select
+        select(name='office')
           option -please select-
           option Cleveland
           option Pittsburgh
