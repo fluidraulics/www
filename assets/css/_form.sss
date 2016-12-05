@@ -1,3 +1,15 @@
+#sales
+  background-image: url(../img/pipe.svg)
+  background-position: 50% 50%
+  background-repeat: repeat
+  background-size: 1000px
+  min-height: 100vh
+
+form
+  background: white
+  margin: 4em 0
+  padding: 0 calc(50% - 384px)
+
 legend
   border: 0
   display: block
@@ -30,6 +42,11 @@ legend
   box-shadow: none
   border-radius: 0
   background-image: none
+
+.textfield > input:focus,
+.textfield > textarea:focus
+  border-color: black
+  border-with: 2px
 
 .textfield > textarea
   min-height: 64px
@@ -73,18 +90,28 @@ legend
 .select > select
   display: block
   height: 32px
-  width: 100%
+  width: 250px
   appearance: none
   outline: 0
   border: none
   border-bottom: 1px solid var(--whiteSmoke)
   border-radius: 0
   box-shadow: none
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNiIgd2lkdGg9IjEwIj48cG9seWdvbiBwb2ludHM9IjAsMCAxMCwwIDUsNiIgc3R5bGU9ImZpbGw6cmdiYSgwLDAsMCwuMjQpOyIvPjwvc3ZnPg==)
   background-color: transparent
+  background-repeat: no-repeat
+  background-position: right center
   cursor: pointer
   color: rgba(0,0,0,.87)
   font-size: 16px
   padding: 0 25px 0 0
+
+.select > select:focus
+  outline: 0
+  height: 33px
+  margin-bottom: -1px
+  border-color: black
+  border-width: 2px
 
 .select > label
   position: absolute
@@ -109,7 +136,7 @@ button
   display: inline-block
   height: 36px
   padding: 0 26px
-  margin-top: 6px
+  margin-top: 3em
   margin-bottom: 6px
   border: none
   border-radius: 2px
