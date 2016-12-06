@@ -19,7 +19,7 @@ extends(src='layouts/default.sgr')
             span.postal-code 16066
           p
           | Phone: 
-          a.tel(href='tel:7244523000') 724.452.3000
+          a.tel(href='tel:7244520300') 724.452.0300
           p
             | Fax: 
             a(href='fax:7244521994') 724.452.1994

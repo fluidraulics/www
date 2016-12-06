@@ -33,7 +33,7 @@ html(lang='en-us')
             | Greater Pittsburgh, PA
             span
               | phone: 
-              a(href='tel:724.452.0300') 724.452.3000
+              a(href='tel:724.452.0300') 724.452.0300
             span
               | fax: 
               a(href='fax:724.452.1994') 724.452.1994
