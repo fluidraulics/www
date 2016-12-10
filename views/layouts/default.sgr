@@ -10,6 +10,8 @@ html(lang='en-us')
     block(name='seo')
     block(name='stylesheets')
       link(rel='stylesheet' href='css/main.css')
+    block(name='favicons')
+      include(src='includes/_favicons.sgr')
 
   body(id='{{ pageId }}')
 
