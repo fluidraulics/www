@@ -17,4 +17,6 @@ link(rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicons/apple-t
 link(rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72-precomposed.png")
 // non-Retina iPhone, iPod Touch, and Android 2.1+ devices: (57x57px)
 link(rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png")
+// good old desktops
+link(rel="icon" type="image/png" href="img/favicons/favicon-32x32.png")
 
