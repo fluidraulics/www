@@ -78,15 +78,21 @@ nav
     list-style: none
     position: relative
 
+    &:after
+      content: ''
+      border-bottom: 2px solid currentColor
+      bottom: 10px
+      left: 100%
+      position: absolute
+      opacity: 0
+      transform: rotate(115deg)
+      transition: opacity 0.2s ease
+      width: 20px
+
     &:hover
       &:after
         content: ''
-        left: 100%
-        border-bottom: 2px solid currentColor
-        bottom: 10px
-        position: absolute
-        transform: rotate(115deg)
-        width: 20px
+        opacity: 1
 
   & a
     color: #000
