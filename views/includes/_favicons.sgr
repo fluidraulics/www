@@ -1,22 +1,4 @@
-// mathiasbynens.be/notes/touch-icons
-// Chrome for Android
-link(rel="icon" sizes="192x192" href="img/favicons/touch-icon-192x192.png")
-// iPhone 6 Plus with @3× display
-link(rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicons/apple-touch-icon-180x180-precomposed.png")
-// iPad with @2× display running iOS ≥ 7
-link(rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicons/apple-touch-icon-152x152-precomposed.png")
-//iPad with @2× display running iOS ≤ 6
-link(rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicons/apple-touch-icon-144x144-precomposed.png")
-// iPhone with @2× display running iOS ≥ 7
-link(rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicons/apple-touch-icon-120x120-precomposed.png")
-// iPhone with @2× display running iOS ≤ 6
-link(rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-114x114-precomposed.png")
-// iPad mini and the first- and second-generation iPad (@1× display) on iOS ≥ 7
-link(rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicons/apple-touch-icon-76x76-precomposed.png")
-// iPad mini and the first- and second-generation iPad (@1× display) on iOS ≤ 6
-link(rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72-precomposed.png")
-// non-Retina iPhone, iPod Touch, and Android 2.1+ devices: (57x57px)
-link(rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png")
-// good old desktops
-link(rel="icon" type="image/png" href="img/favicons/favicon-32x32.png")
+link(rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-touch-icon-192x192.png")
+link(rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png")
+link(rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png")
 
