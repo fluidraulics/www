@@ -1,0 +1,11 @@
+extends(src='layouts/default.sgr')
+  block(name='seo')
+    title {{ contentful.fourzerofour[0].meta.fields.seoTitle }}
+    meta(
+      name='description'
+      content='{{ contentful.fourzerofour[0].meta.fields.seoDescription }}'
+    )
+  block(name='main')
+    h1 {{ contentful.fourzerofour[0].block[0].fields.title }}
+    p {{{ marked(contentful.fourzerofour[0].block[0].fields.body) }}}
+

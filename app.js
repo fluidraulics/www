@@ -13,7 +13,11 @@ const locals = {}
 
 const myPageId = function pageId (ctx) {
   if (ctx.options) {
-    return ctx.resourcePath.replace(`${ctx.options.context}/`, '').replace(/(.*)?(\..+?$)/, '$1').replace(new RegExp(`(?:${ctx.options.spike.dumpDirs.join('|')})/`), '').replace(/\//g, '-')
+    var pageId =  ctx.resourcePath.replace(`${ctx.options.context}/`, '').replace(/(.*)?(\..+?$)/, '$1').replace(new RegExp(`(?:${ctx.options.spike.dumpDirs.join('|')})/`), '').replace(/\//g, '-')
+    if (pageId ==='404') {
+      return 'p404'
+    }
+    return pageId
   }
   return 'vendor'
 }
@@ -71,6 +75,13 @@ module.exports = {
           id: 'page',
           filters: {
             'sys.id': '60aMIbHglykAuUwgg2QkUO'
+          }
+        },
+        {
+          name: 'fourzerofour',
+          id: 'page',
+          filters: {
+            'sys.id': '7dP1qSSE6s6OQcIy6WmyEc'
           }
         },
         {
