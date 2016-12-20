@@ -78,6 +78,13 @@ module.exports = {
           }
         },
         {
+          name: 'credit',
+          id: 'page',
+          filters: {
+            'sys.id': '31FKyKE2Huu6EAWI8YyIYK'
+          }
+        },
+        {
           name: 'fourzerofour',
           id: 'page',
           filters: {
