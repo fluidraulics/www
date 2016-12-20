@@ -11,3 +11,7 @@
 # TODO: create actual vendor to vendor redirects
 
 /product-library/* /vendors
+
+# Custom 404s
+
+/credit.aspx /credit 404
