@@ -6,5 +6,5 @@ extends(src='layouts/default.sgr')
       content='{{ contentful.index[0].meta.fields.seoDescription }}'
     )
   block(name='main')
-    h1 {{ contentful.index[0].block[0].fields.body }}
+    h1:span {{ contentful.index[0].block[0].fields.body }}
 
