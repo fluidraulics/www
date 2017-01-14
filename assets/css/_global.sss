@@ -2,8 +2,8 @@ body
   font-family: var(--fontFamily)
   font-size: responsive 16px 18px
   font-weight: normal
-  color: #111
-  background-color: #fff
+  color: var(--brandBlack)
+  background-color: var(--brandGray)
 
 /*  ================ Main ================ */
 
@@ -58,6 +58,9 @@ header
   & #mark
     width: 3em
 
+    @media (min-width: 48em)
+      width: 5em
+
   @media (min-width: 40em)
     flex-direction: row
 
@@ -65,7 +68,6 @@ header
       min-width: 40vw
 
 nav
-  background: var(--whiteSmoke)
   border-radius: 5px
   min-width: 90vw
   padding: 0.5em
@@ -95,13 +97,13 @@ nav
         opacity: 1
 
   & a
-    color: #000
+    color: var(--brandBlack)
     text-decoration: none
 
 /*  ================ footer ================ */
 
 footer
-  background: var(--whiteSmoke)
+  background: var(--brandGray)
   padding: 2em calc(50% - 384px)
   
   & ul
@@ -123,7 +125,7 @@ footer
     margin: 1em 0
 
   & a
-    color: #000
+    color: var(--brandBlack)
     text-decoration: none
 
 /*  ================ business address ================ */
