@@ -18,7 +18,7 @@ html(lang='en-us')
     block(name='header')
       header
         a(href='/')
-          img(src='img/mark.svg' id='mark')
+          img(src='img/mark-blue.svg' id='mark')
         nav
           ul
             li:a(href='vendors') Vendors
